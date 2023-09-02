@@ -1,0 +1,10 @@
+###
+
+### Request a token
+GET {{baseUrl}}/getToken/johndoe HTTP/2
+
+###
+
+### Use the token to access a protected resource
+GET {{baseUrl}}/secret HTTP/2
+Authorization: Bearer {token}

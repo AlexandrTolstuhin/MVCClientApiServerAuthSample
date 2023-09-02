@@ -1,0 +1,26 @@
+###
+
+### Get the home page
+GET {{baseUrl}}/ HTTP/1.1
+
+###
+
+### Get the loginRequired page
+GET {{baseUrl}}/loginRequired HTTP/1.1
+
+###
+
+### Login as John Doe
+GET {{baseUrl}}/login/johndoe HTTP/1.1
+
+###
+
+### Get the secret page
+GET {{baseUrl}}/secret HTTP/1.1
+Cookie: {cookie}
+
+###
+
+### Logout
+GET {{baseUrl}}/logout HTTP/1.1
+Cookie: {cookie}
